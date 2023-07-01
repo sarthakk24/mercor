@@ -14,20 +14,16 @@ const generateContent = async (description: string) => {
             messages: [
                 {
                     role: 'user',
-                    content: `Generate description, caption, tags, hashtags for the following description ${description}`,
+                    content: `Generate description, caption, tags, hashtags for the following description in a js object format with tags and hashtags in a list format such that is can be directly used JSON.parse function for following description " " ${description} "`,
                 },
             ],
         })
 
-        const response =
-            completion.data.choices[0].message.content.split('\n\n')
+        const response = completion.data.choices[0].message.content
 
-        return {
-            description: response[0],
-            caption: response[1],
-            tags: response[2],
-            hashtags: response[3],
-        }
+        const data = JSON.parse(response)
+
+        return { ...data }
     } catch (error) {
         throw error
     }
