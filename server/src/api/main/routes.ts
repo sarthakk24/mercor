@@ -9,22 +9,24 @@ const handler = async (req: Request, res: Response) => {
         if (!description)
             throw { status: 400, message: 'Description is required' }
 
-        if (description.length < 60)
-            throw {
-                status: 400,
-                message: 'Description must be at least 60 characters',
-            }
+        // if (description.length < 60)
+        //     throw {
+        //         status: 400,
+        //         message: 'Description must be at least 60 characters',
+        //     }
 
-        const result = await generate(description)
+        const data = await generate(description)
 
         res.status(200).json({
             success: true,
-            message: 'Hello world!',
-            data: result,
+            message: 'Generation complete',
+            data: data,
         })
     } catch (error) {
+        console.log(error)
+
         Logger.error(error)
-        res.status(error.status).json({
+        res.status(400).json({
             success: false,
             message: error.message,
         })
