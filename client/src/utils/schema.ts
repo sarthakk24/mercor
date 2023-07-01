@@ -9,3 +9,11 @@ export const requestSchema = Yup.object().shape({
 export interface RequestInterface {
   description: string;
 }
+
+export interface ResponseInterface {
+  description: string;
+  caption: string;
+  hashTags: string[];
+  tags: string[];
+  url: string;
+}

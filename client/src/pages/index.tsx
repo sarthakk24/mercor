@@ -13,7 +13,6 @@ export default function Home() {
       </Head>
       <main>
         <Navbar />
-        Social Media Content Generation
         <InputModule /> <Footer />
       </main>
     </>
