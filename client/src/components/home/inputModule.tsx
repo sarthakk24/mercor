@@ -17,7 +17,7 @@ import Content from "./content";
 
 const InputModule = () => {
   const [loading, setLoading] = useState(false);
-  const [content, setContent] = useState<RequestInterface | null>(null);
+  const [content, setContent] = useState<ResponseInterface | null>(null);
 
   const initialValues = {
     description: "",

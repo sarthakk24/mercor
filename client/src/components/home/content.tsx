@@ -1,20 +1,52 @@
-import { type RequestInterface } from "@task/utils/schema";
+import { type ResponseInterface } from "@task/utils/schema";
 import Image from "next/legacy/image";
 
-const Content = ({ data }: { data: RequestInterface }) => {
+const Content = ({ data }: { data: ResponseInterface }) => {
   console.log(data);
 
   return (
-    <div>
-      <h1>Content</h1>
-      <div className="relative">
+    <div className="flex">
+      <div>
         <Image
-          className="h-auto max-w-full"
-          src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-yUV2ICUMaNhirZLDkytoNMts/user-BRCrD2gHcFTrOBCgZbMt1OSK/img-zzEzWbiP5QN2vUXHkTuyMA43.png?st=2023-07-01T20%3A38%3A02Z&se=2023-07-01T22%3A38%3A02Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-07-01T20%3A25%3A44Z&ske=2023-07-02T20%3A25%3A44Z&sks=b&skv=2021-08-06&sig=eqDhMQkrriO1RjpRMGx0f9%2BhbJPKoGWKyiV0KkzM%2BfM%3D"
-          layout="fill"
-          objectFit="contain"
+          width={512}
+          height={512}
+          src={data.url}
           alt="image description"
         />
+      </div>
+      <div className="flex flex-col items-center justify-center">
+        <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl">
+          We invest in the world’s potential
+        </h1>
+        <p className="mb-6 text-lg font-semibold text-gray-900 sm:px-16 lg:text-xl xl:px-48">
+          Description : {data.description}
+        </p>
+        <p className="mb-6 text-lg font-semibold text-gray-900 sm:px-16 lg:text-xl xl:px-48">
+          Caption : {data.caption}
+        </p>
+
+        <div className="flex w-full justify-evenly">
+          <div>
+            <h2 className="mb-2 text-lg font-semibold text-gray-900 ">
+              # Hash Tags:
+            </h2>
+            <ol className="max-w-md list-inside list-decimal space-y-1 font-semibold text-gray-700">
+              {data.hashTags.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ol>
+          </div>
+          <div>
+            <h2 className="mb-2 text-lg font-semibold text-gray-900 ">
+              # Tags
+            </h2>
+            <ol className="max-w-md list-inside list-decimal space-y-1 font-semibold text-gray-700">
+              {data.tags.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ol>
+          </div>
+        </div>
       </div>
     </div>
   );

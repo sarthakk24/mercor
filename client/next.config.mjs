@@ -24,6 +24,10 @@ const config = {
         protocol: "https",
         hostname: "oaidalleapiprodscus.blob.core.windows.net",
       },
+      {
+        protocol: "https",
+        hostname: "sarthakk24.s3.ap-south-1.amazonaws.com",
+      },
     ],
   },
 };
