@@ -136,3 +136,4 @@ src/static/temp/*
 !.env.project
 !.env.vault
 build/
+.vercel
