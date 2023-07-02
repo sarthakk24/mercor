@@ -6,7 +6,7 @@ const Footer = () => {
           <div className="mb-6 md:mb-0">
             <a href="https://flowbite.com/" className="flex items-center">
               <span className="self-center whitespace-nowrap text-2xl font-semibold dark:text-white">
-                Content Generation
+                Post IT.
               </span>
             </a>
           </div>

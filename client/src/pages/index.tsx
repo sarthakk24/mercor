@@ -19,7 +19,7 @@ export default function Home() {
       </Head>
       <main className="flex min-h-screen flex-col justify-between">
         <Navbar />
-        <div className="flex h-full justify-evenly">
+        <div className="flex h-full flex-col items-center justify-evenly md:flex-row">
           {content !== null && content !== undefined ? (
             <InputModule content={content} setContent={setContent} />
           ) : (

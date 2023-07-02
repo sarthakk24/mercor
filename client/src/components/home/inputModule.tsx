@@ -45,7 +45,16 @@ const InputModule = ({ content, setContent }: InputInterface) => {
     }
   };
   return (
-    <div className="m-5 flex flex-col items-center justify-center">
+    <div className="m-5 flex w-4/5 flex-col items-center justify-center md:w-1/2">
+      {content !== null && content !== undefined ? (
+        ""
+      ) : (
+        <h1 className="text-2 xl my-4 text-left text-lg font-extrabold leading-none tracking-tight text-gray-900 md:text-lg xl:text-3xl">
+          Unleash your social media potential with Post IT. - the AI-powered
+          content generator for captions, images, and hashtags.
+        </h1>
+      )}
+
       <ToastContainer />
       {content !== null && content !== undefined ? (
         <Content data={content} />
@@ -55,14 +64,14 @@ const InputModule = ({ content, setContent }: InputInterface) => {
           validationSchema={requestSchema}
           onSubmit={onSubmit}
         >
-          <Form>
+          <Form className="flex w-full flex-col items-center justify-center">
             {loading ? (
               <Spinner />
             ) : (
-              <div className="flex flex-col items-center justify-center">
-                <h1 className="text-2 xl my-4 text-center text-lg font-extrabold leading-none tracking-tight text-gray-900 md:text-3xl lg:text-5xl xl:text-6xl">
-                  Enter Description
-                </h1>
+              <div className="flex w-1/2 flex-col items-center justify-center">
+                <h2 className="text-2 xl md:text-md text-left text-lg font-semibold leading-none tracking-tight text-gray-900 xl:text-xl">
+                  Enter Description :
+                </h2>
                 <Field
                   name="description"
                   as="textarea"
