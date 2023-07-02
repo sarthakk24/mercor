@@ -37,7 +37,7 @@ const Footer = () => {
                   <Link
                     target="_blank"
                     rel="noopener noreferrer"
-                    href="https://www.youtube.com/"
+                    href="https://www.youtube.com/watch?v=PhFdfvbm3MM"
                     className="hover:underline"
                   >
                     Youtube Video
@@ -47,7 +47,7 @@ const Footer = () => {
                   <Link
                     target="_blank"
                     rel="noopener noreferrer"
-                    href="https://tailwindcss.com/"
+                    href="https://sarthakk24.s3.ap-south-1.amazonaws.com/Mercor+Presentaion.pptx"
                     className="hover:underline"
                   >
                     Presentation
@@ -148,7 +148,7 @@ const Footer = () => {
                   <Link
                     target="_blank"
                     rel="noopener noreferrer"
-                    href="#"
+                    href="https://www.linkedin.com/in/sourabh-singh-693a57253/"
                     className="hover:underline"
                   >
                     LinkedIn
@@ -158,7 +158,7 @@ const Footer = () => {
                   <Link
                     target="_blank"
                     rel="noopener noreferrer"
-                    href="#"
+                    href="https://github.com/SOUraBh-5"
                     className="hover:underline"
                   >
                     Github
@@ -168,7 +168,7 @@ const Footer = () => {
                   <Link
                     target="_blank"
                     rel="noopener noreferrer"
-                    href="#"
+                    href="https://sarthakk24.s3.ap-south-1.amazonaws.com/sorabh_sing_resume.pdf"
                     className="hover:underline"
                   >
                     Resume
