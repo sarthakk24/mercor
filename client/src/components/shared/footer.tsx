@@ -1,14 +1,21 @@
+import Link from "next/link";
+
 const Footer = () => {
   return (
     <footer className="bg-white dark:bg-gray-900">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
-            <a href="/" className="flex items-center">
+            <Link
+              target="_blank"
+              rel="noopener noreferrer"
+              href="/"
+              className="flex items-center"
+            >
               <span className="self-center whitespace-nowrap text-2xl font-semibold dark:text-white">
                 Post IT.
               </span>
-            </a>
+            </Link>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:grid-cols-4 sm:gap-6">
             <div>
@@ -17,28 +24,34 @@ const Footer = () => {
               </h2>
               <ul className="font-medium text-gray-600 dark:text-gray-400">
                 <li className="mb-4">
-                  <a
+                  <Link
+                    target="_blank"
+                    rel="noopener noreferrer"
                     href="https://github.com/sarthakk24/mercor"
                     className="hover:underline"
                   >
                     Github
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-4">
-                  <a
+                  <Link
+                    target="_blank"
+                    rel="noopener noreferrer"
                     href="https://www.youtube.com/"
                     className="hover:underline"
                   >
                     Youtube Video
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
+                    target="_blank"
+                    rel="noopener noreferrer"
                     href="https://tailwindcss.com/"
                     className="hover:underline"
                   >
                     Presentation
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -48,36 +61,44 @@ const Footer = () => {
               </h2>
               <ul className="font-medium text-gray-600 dark:text-gray-400">
                 <li className="mb-4">
-                  <a
+                  <Link
+                    target="_blank"
+                    rel="noopener noreferrer"
                     href="https://www.linkedin.com/in/sarthakk24/"
                     className="hover:underline"
                   >
                     Linkedin
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-4">
-                  <a
+                  <Link
+                    target="_blank"
+                    rel="noopener noreferrer"
                     href="https://github.com/sarthakk24"
                     className="hover:underline"
                   >
                     Github
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-4">
-                  <a
+                  <Link
+                    target="_blank"
+                    rel="noopener noreferrer"
                     href="https://twitter.com/sarthakk73"
                     className="hover:underline"
                   >
                     Twitter
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-4">
-                  <a
+                  <Link
+                    target="_blank"
+                    rel="noopener noreferrer"
                     href="https://sarthakk24.s3.ap-south-1.amazonaws.com/Sarthak_Sachdeva_Resume.pdf"
                     className="hover:underline"
                   >
                     Resume
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -87,28 +108,34 @@ const Footer = () => {
               </h2>
               <ul className="font-medium text-gray-600 dark:text-gray-400">
                 <li className="mb-4">
-                  <a
+                  <Link
+                    target="_blank"
+                    rel="noopener noreferrer"
                     href="https://github.com/saranshsinhaa"
                     className="hover:underline "
                   >
                     Github
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-4">
-                  <a
+                  <Link
+                    target="_blank"
+                    rel="noopener noreferrer"
                     href="https://www.linkedin.com/in/saranshsinhaa/"
                     className="hover:underline"
                   >
                     Linkedin
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-4">
-                  <a
+                  <Link
+                    target="_blank"
+                    rel="noopener noreferrer"
                     href="https://sarthakk24.s3.ap-south-1.amazonaws.com/Saransh_Sinha_Resume.pdf"
                     className="hover:underline "
                   >
                     Resume
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -118,19 +145,34 @@ const Footer = () => {
               </h2>
               <ul className="font-medium text-gray-600 dark:text-gray-400">
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">
+                  <Link
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="#"
+                    className="hover:underline"
+                  >
                     LinkedIn
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">
+                  <Link
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="#"
+                    className="hover:underline"
+                  >
                     Github
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:underline">
+                  <Link
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="#"
+                    className="hover:underline"
+                  >
                     Resume
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
