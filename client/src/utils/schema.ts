@@ -24,3 +24,8 @@ export interface RegenerateInterface {
   message: string;
   success: boolean;
 }
+
+export interface InputInterface {
+  content: ResponseInterface | null;
+  setContent: React.Dispatch<React.SetStateAction<ResponseInterface | null>>;
+}

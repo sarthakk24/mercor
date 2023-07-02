@@ -16,13 +16,13 @@ const handler = async (req: Request, res: Response) => {
                 message: 'Description must be at least 60 characters',
             }
 
-        const data = await generate(description)
+        // const data = await generate(description)
 
-        res.status(200).json({
-            success: true,
-            message: 'Generation complete',
-            data: data,
-        })
+        // res.status(200).json({
+        //     success: true,
+        //     message: 'Generation complete',
+        //     data: data,
+        // })
 
         res.status(200).json({
             success: true,
