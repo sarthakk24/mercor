@@ -68,8 +68,8 @@ const InputModule = ({ content, setContent }: InputInterface) => {
             {loading ? (
               <Spinner />
             ) : (
-              <div className="flex w-1/2 flex-col items-center justify-center">
-                <h2 className="text-2 xl md:text-md text-left text-lg font-semibold leading-none tracking-tight text-gray-900 xl:text-xl">
+              <div className="flex w-full flex-col items-center justify-center md:w-1/2">
+                <h2 className="md:text-md text-left text-sm font-semibold leading-none tracking-tight text-gray-900 xl:text-xl">
                   Enter Description :
                 </h2>
                 <Field
