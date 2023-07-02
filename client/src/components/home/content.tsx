@@ -14,6 +14,13 @@ const Content = ({ data }: { data: ResponseInterface }) => {
             src={data.url}
             alt="image description"
           />
+          <a
+            className="mb-2 mr-2 inline-flex items-center rounded-lg border border-gray-200 bg-white px-5 py-2.5 text-center text-sm font-medium text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            href={data.url}
+            download={data.title}
+          >
+            Download
+          </a>
         </div>
       </div>
       <div className="flex flex-col items-center justify-center">
