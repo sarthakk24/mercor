@@ -45,7 +45,7 @@ const InputModule = () => {
     }
   };
   return (
-    <div className="m-20">
+    <div className="m-5">
       <ToastContainer />
       {content !== null && content !== undefined ? (
         <Content data={content} />

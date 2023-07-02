@@ -14,7 +14,7 @@ const generateContent = async (description: string) => {
             messages: [
                 {
                     role: 'user',
-                    content: `Generate description, caption, tags, hashtags for the following description in a js object format with tags and hashtags in a list format such that is can be directly used JSON.parse function for following description " " ${description} "`,
+                    content: `Generate a formal title, description, caption, tags, hashtags for the following description in a js object format with tags and hashtags in a list format such that is can be directly used JSON.parse function for following description " " ${description} "`,
                 },
             ],
         })

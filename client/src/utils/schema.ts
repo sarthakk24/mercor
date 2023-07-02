@@ -11,9 +11,10 @@ export interface RequestInterface {
 }
 
 export interface ResponseInterface {
+  title: string;
   description: string;
   caption: string;
-  hashTags: string[];
+  hashtags: string[];
   tags: string[];
   url: string;
 }
