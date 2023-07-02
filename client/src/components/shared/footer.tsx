@@ -4,7 +4,7 @@ const Footer = () => {
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
-            <a href="https://flowbite.com/" className="flex items-center">
+            <a href="/" className="flex items-center">
               <span className="self-center whitespace-nowrap text-2xl font-semibold dark:text-white">
                 Post IT.
               </span>
@@ -17,13 +17,16 @@ const Footer = () => {
               </h2>
               <ul className="font-medium text-gray-600 dark:text-gray-400">
                 <li className="mb-4">
-                  <a href="https://flowbite.com/" className="hover:underline">
+                  <a
+                    href="https://github.com/sarthakk24/mercor"
+                    className="hover:underline"
+                  >
                     Github
                   </a>
                 </li>
                 <li className="mb-4">
                   <a
-                    href="https://tailwindcss.com/"
+                    href="https://www.youtube.com/"
                     className="hover:underline"
                   >
                     Youtube Video
@@ -45,16 +48,35 @@ const Footer = () => {
               </h2>
               <ul className="font-medium text-gray-600 dark:text-gray-400">
                 <li className="mb-4">
-                  <a href="https://flowbite.com/" className="hover:underline">
-                    Flowbite
-                  </a>
-                </li>
-                <li>
                   <a
-                    href="https://tailwindcss.com/"
+                    href="https://www.linkedin.com/in/sarthakk24/"
                     className="hover:underline"
                   >
-                    Tailwind CSS
+                    Linkedin
+                  </a>
+                </li>
+                <li className="mb-4">
+                  <a
+                    href="https://github.com/sarthakk24"
+                    className="hover:underline"
+                  >
+                    Github
+                  </a>
+                </li>
+                <li className="mb-4">
+                  <a
+                    href="https://twitter.com/sarthakk73"
+                    className="hover:underline"
+                  >
+                    Twitter
+                  </a>
+                </li>
+                <li className="mb-4">
+                  <a
+                    href="https://sarthakk24.s3.ap-south-1.amazonaws.com/Sarthak_Sachdeva_Resume.pdf"
+                    className="hover:underline"
+                  >
+                    Resume
                   </a>
                 </li>
               </ul>
@@ -66,18 +88,26 @@ const Footer = () => {
               <ul className="font-medium text-gray-600 dark:text-gray-400">
                 <li className="mb-4">
                   <a
-                    href="https://github.com/themesberg/flowbite"
+                    href="https://github.com/saranshsinhaa"
                     className="hover:underline "
                   >
                     Github
                   </a>
                 </li>
-                <li>
+                <li className="mb-4">
                   <a
-                    href="https://discord.gg/4eeurUVvTy"
+                    href="https://www.linkedin.com/in/saranshsinhaa/"
                     className="hover:underline"
                   >
-                    Discord
+                    Linkedin
+                  </a>
+                </li>
+                <li className="mb-4">
+                  <a
+                    href="https://sarthakk24.s3.ap-south-1.amazonaws.com/Saransh_Sinha_Resume.pdf"
+                    className="hover:underline "
+                  >
+                    Resume
                   </a>
                 </li>
               </ul>
@@ -89,12 +119,17 @@ const Footer = () => {
               <ul className="font-medium text-gray-600 dark:text-gray-400">
                 <li className="mb-4">
                   <a href="#" className="hover:underline">
-                    Privacy Policy
+                    LinkedIn
+                  </a>
+                </li>
+                <li className="mb-4">
+                  <a href="#" className="hover:underline">
+                    Github
                   </a>
                 </li>
                 <li>
                   <a href="#" className="hover:underline">
-                    Terms &amp; Conditions
+                    Resume
                   </a>
                 </li>
               </ul>
