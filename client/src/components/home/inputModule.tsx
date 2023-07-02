@@ -50,7 +50,8 @@ const InputModule = ({ content, setContent }: InputInterface) => {
         ""
       ) : (
         <h1 className="text-2 xl my-4 text-left text-lg font-extrabold leading-none tracking-tight text-gray-900 md:text-lg xl:text-3xl">
-          Unleash your social media potential with Post IT. - the AI-powered
+          Unleash your social media potential with{" "}
+          <span className="text-[#226cff]">Post IT.</span> - the AI-powered
           content generator for captions, images, and hashtags.
         </h1>
       )}
