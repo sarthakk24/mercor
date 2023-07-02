@@ -11,3 +11,10 @@ export const getContentData = async (description: string) => {
   // eslint-disable-next-line @typescript-eslint/no-unsafe-return
   return data;
 };
+
+export const regenerateImage = async (description: string) => {
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+  const { data } = await instance.post(REST_ENDPOINTS.image, { description });
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-return
+  return data;
+};

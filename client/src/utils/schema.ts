@@ -18,3 +18,9 @@ export interface ResponseInterface {
   tags: string[];
   url: string;
 }
+
+export interface RegenerateInterface {
+  data: string;
+  message: string;
+  success: boolean;
+}

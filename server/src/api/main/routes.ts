@@ -94,11 +94,11 @@ const imageHandler = async (req: Request, res: Response) => {
         if (!description)
             throw { status: 400, message: 'Description is required' }
 
-        if (description.length < 60)
-            throw {
-                status: 400,
-                message: 'Description must be at least 60 characters',
-            }
+        // if (description.length < 60)
+        //     throw {
+        //         status: 400,
+        //         message: 'Description must be at least 60 characters',
+        //     }
 
         const data = await image(description)
 
@@ -107,6 +107,12 @@ const imageHandler = async (req: Request, res: Response) => {
             message: 'Generation complete',
             data: data,
         })
+
+        // res.status(200).json({
+        //     success: true,
+        //     message: 'Generation complete',
+        //     data: 'https://oaidalleapiprodscus.blob.core.windows.net/private/org-yUV2ICUMaNhirZLDkytoNMts/user-BRCrD2gHcFTrOBCgZbMt1OSK/img-syEE8SMdGEi1eELExax8P6oz.png?st=2023-07-02T01%3A10%3A45Z&se=2023-07-02T03%3A10%3A45Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-07-01T20%3A27%3A43Z&ske=2023-07-02T20%3A27%3A43Z&sks=b&skv=2021-08-06&sig=nrlfbADMc2%2BaZJIQ3KBxCC/gI0h1t08M4ammQIP57WQ%3D',
+        // })
     } catch (error) {
         console.log(error)
 
