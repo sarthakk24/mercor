@@ -2,10 +2,7 @@ import axios from "axios";
 import { REST_ENDPOINTS } from "../constants";
 
 const instance = axios.create({
-  baseURL: `${
-    process.env.NEXT_PUBLIC_URL ||
-    "http://ec2-52-66-248-69.ap-south-1.compute.amazonaws.com:5050"
-  }`,
+  baseURL: `${process.env.NEXT_PUBLIC_URL || "http://localhost:3000"}`,
 });
 
 export const getContentData = async (description: string) => {
