@@ -42,7 +42,9 @@ With the combination of these technologies, PostIT aims to provide a seamless ex
 
 ### Project Architecture
 
-![Architecture diagram](https://github.com/sarthakk24/mercor/assets/70757536/74dc2dd6-c0ae-42b5-a2e4-7404d5e77067)
+![Architecture diagram](https://github.com/sarthakk24/mercor/assets/70757536/9191cebf-0c5a-487b-9772-b5a8dda3c761)
+
+
 
 ### Project Demonstartion
 
