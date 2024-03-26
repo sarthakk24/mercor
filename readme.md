@@ -40,3 +40,10 @@ The application leverages the following technologies:
 
 With the combination of these technologies, PostIT aims to provide a seamless experience for users in managing their social media content creation needs.
 
+### Project Architecture
+
+![Architecture diagram](https://github.com/sarthakk24/mercor/assets/70757536/74dc2dd6-c0ae-42b5-a2e4-7404d5e77067)
+
+### Project Demonstartion
+
+[Video Link](https://www.youtube.com/watch?v=PhFdfvbm3MM)
